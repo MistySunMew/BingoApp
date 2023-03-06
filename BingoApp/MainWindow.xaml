@@ -8,7 +8,7 @@
         Title="MainWindow" WindowStyle="None" WindowState="Maximized" Width="1920" Height="1080" Loaded="Window_Loaded">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="103" Margin="37,707,0,0" Stroke="Black" VerticalAlignment="Top" Width="124"/>
-        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="322,601,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click" Height="130" Width="320" FontSize="50"/>
+        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="322,787,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click" Height="130" Width="320" FontSize="50"/>
         <Rectangle HorizontalAlignment="Left" Height="400" Margin="672,590,0,0" Stroke="Black" VerticalAlignment="Top" Width="400"/>
         <TextBlock x:Name="tblCurrCall" HorizontalAlignment="Left" Margin="672,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" Width="400" FontFamily="Arial Black" FontSize="280" TextAlignment="Center"/>
         <TextBlock x:Name="tblB" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
@@ -27,9 +27,9 @@
         <TextBlock x:Name="tbl14" HorizontalAlignment="Left" Margin="1622,10,0,0" TextWrapping="Wrap" Text="14" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tbl13" HorizontalAlignment="Left" Margin="1507,10,0,0" TextWrapping="Wrap" Text="13" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tbl15" HorizontalAlignment="Left" Margin="1737,10,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
-        <TextBlock x:Name="tbl16" HorizontalAlignment="Left" Margin="125,105,0,0" TextWrapping="Wrap" Text="16" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
+        <TextBlock x:Name="tbl16" HorizontalAlignment="Left" Margin="125,100,0,0" TextWrapping="Wrap" Text="16" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tblI" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="I" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
-        <TextBlock x:Name="tbl17" HorizontalAlignment="Left" Margin="240,105,0,0" TextWrapping="Wrap" Text="17" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
+        <TextBlock x:Name="tbl17" HorizontalAlignment="Left" Margin="240,100,0,0" TextWrapping="Wrap" Text="17" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tbl19" HorizontalAlignment="Left" Margin="470,100,0,0" TextWrapping="Wrap" Text="19" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tbl18" HorizontalAlignment="Left" Margin="355,105,0,0" TextWrapping="Wrap" Text="18" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tbl20" HorizontalAlignment="Left" Margin="585,100,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
@@ -127,6 +127,8 @@
         <TextBlock x:Name="tblTimer" HorizontalAlignment="Left" Margin="37,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="90" TextAlignment="Center"/>
         <Label Content="Timer:" HorizontalAlignment="Left" Margin="13,617,0,0" VerticalAlignment="Top" FontSize="60"/>
         <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="298,950,0,0" VerticalAlignment="Top" Cursor="Hand" Height="80" Width="250" FontSize="50" Click="btnNewGame_Click"/>
+        <TextBlock x:Name="tblGameNumber" HorizontalAlignment="Left" Margin="37,471,0,0" TextWrapping="Wrap" Text="Game Number 1" VerticalAlignment="Top" Height="87" Width="398" FontSize="50"/>
+        <TextBlock x:Name="tblNumCalls" HorizontalAlignment="Left" Margin="37,558,0,0" TextWrapping="Wrap" Text="Number of Calls: 0" VerticalAlignment="Top" Height="87" Width="445" FontSize="50"/>
 
     </Grid>
 </Window>
