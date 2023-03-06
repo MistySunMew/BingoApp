@@ -27,8 +27,16 @@ namespace BingoApp
         public MainWindow()
         {
             InitializeComponent();
+            GameNumber = 1;
         }
 
+        public MainWindow(int gameNumber)
+        {
+            GameNumber = gameNumber;
+            InitializeComponent();
+        }
+
+        private int GameNumber;
         private int CurrentNumber = 0;
         private ArrayList CalledNumbers = new();
         private int CalledNumbersCount = 0;
@@ -304,6 +312,10 @@ namespace BingoApp
                         break;
                 }
 
+                CalledNumbersCount++;
+                   
+                tblNumCalls.Text = "Number of Calls: " + CalledNumbersCount.ToString();
+
                 TimeLeft = CallTime + 1;
             }
         }
@@ -333,8 +345,9 @@ namespace BingoApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Interval = new TimeSpan(0, 0, 0, 1);
             timer.Tick += timer_Tick;
+            tblGameNumber.Text = "Game Number " + GameNumber.ToString();
         }
 
         private void timer_Tick(object? sender, EventArgs e)
@@ -348,8 +361,9 @@ namespace BingoApp
 
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
-            Window win = new MainWindow();
+            Window win = new MainWindow(GameNumber + 1);
             win.Show();
+            Close();
         }
     }
 }
