@@ -125,7 +125,7 @@
         <TextBlock x:Name="tblO_Copy" HorizontalAlignment="Left" Margin="1435,370,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" Width="75" Height="75" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <ComboBox x:Name="cbxTimeValues" HorizontalAlignment="Left" Margin="13,657,0,0" VerticalAlignment="Top" Loaded="cbxTimeValues_Loaded" FontSize="30" SelectionChanged="cbxTimeValues_SelectionChanged" Height="42" Width="65"/>
         <Label Content="Time Per Call:" HorizontalAlignment="Left" Margin="10,607,0,0" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock x:Name="tblTimer" HorizontalAlignment="Left" Margin="21,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="40" TextAlignment="Center"/>
+        <TextBlock x:Name="tblTimer" HorizontalAlignment="Left" Margin="21,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="40" TextAlignment="Center" Width="55" Height="45"/>
         <Label Content="Timer:" HorizontalAlignment="Left" Margin="13,480,0,0" VerticalAlignment="Top" FontSize="35"/>
         <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="115,772,0,0" VerticalAlignment="Top" Cursor="Hand" Height="65" FontSize="35" Click="btnNewGame_Click" Width="250"/>
         <TextBlock x:Name="tblGameNumber" HorizontalAlignment="Left" Margin="10,372,0,0" TextWrapping="Wrap" Text="Game Number 1" VerticalAlignment="Top" FontSize="45"/>
