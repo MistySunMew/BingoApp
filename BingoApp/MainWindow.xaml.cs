@@ -24,5 +24,15 @@ namespace BingoApp
         {
             InitializeComponent();
         }
+
+        private int CurrentNumber = 0;
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           
+            Random rnd = new Random();
+            CurrentNumber = rnd.Next(1, 76);
+
+        }
     }
 }
