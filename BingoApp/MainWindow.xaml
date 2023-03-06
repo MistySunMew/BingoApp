@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BingoApp"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStyle="None" WindowState="Maximized" Width="1920" Height="1080">
+        Title="MainWindow" WindowStyle="None" WindowState="Maximized" Width="1920" Height="1080" Loaded="Window_Loaded">
     <Grid>
-        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="92,574,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click" Height="130" Width="320" FontSize="50"/>
+        <Rectangle HorizontalAlignment="Left" Height="103" Margin="37,707,0,0" Stroke="Black" VerticalAlignment="Top" Width="124"/>
+        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="322,904,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click" Height="130" Width="320" FontSize="50"/>
         <Rectangle HorizontalAlignment="Left" Height="400" Margin="672,590,0,0" Stroke="Black" VerticalAlignment="Top" Width="400"/>
         <TextBlock x:Name="tblCurrCall" HorizontalAlignment="Left" Margin="672,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" Width="400" FontFamily="Arial Black" FontSize="280" TextAlignment="Center"/>
         <TextBlock x:Name="tblB" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
@@ -121,6 +122,10 @@
         <TextBlock x:Name="tblN_Copy" HorizontalAlignment="Left" Margin="1467,480,0,0" TextWrapping="Wrap" Text="N" VerticalAlignment="Top" Width="100" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tblG_Copy" HorizontalAlignment="Left" Margin="1567,480,0,0" TextWrapping="Wrap" Text="G" VerticalAlignment="Top" Width="100" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
         <TextBlock x:Name="tblO_Copy" HorizontalAlignment="Left" Margin="1667,480,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" Width="100" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
+        <ComboBox x:Name="cbxTimeValues" HorizontalAlignment="Left" Margin="38,883,0,0" VerticalAlignment="Top" Width="239" Height="54" Loaded="cbxTimeValues_Loaded" FontSize="35" SelectionChanged="cbxTimeValues_SelectionChanged"/>
+        <Label Content="Time Per Call:" HorizontalAlignment="Left" Margin="38,820,0,0" VerticalAlignment="Top" FontSize="40"/>
+        <TextBlock x:Name="tblTimer" HorizontalAlignment="Left" Margin="37,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="90" TextAlignment="Center"/>
+        <Label Content="Timer:" HorizontalAlignment="Left" Margin="13,617,0,0" VerticalAlignment="Top" FontSize="60"/>
 
     </Grid>
 </Window>

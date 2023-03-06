@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace BingoApp
 {
@@ -29,6 +31,10 @@ namespace BingoApp
 
         private int CurrentNumber = 0;
         private ArrayList CalledNumbers = new();
+        private int CalledNumbersCount = 0;
+        private int CallTime;
+        private int TimeLeft = 0;
+        private DispatcherTimer timer = new();
 
         private void ChangeSelectedColor(object sender, RoutedEventArgs e) 
         {
@@ -297,12 +303,47 @@ namespace BingoApp
                     default:
                         break;
                 }
+
+                TimeLeft = CallTime + 1;
             }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void cbxTimeValues_Loaded(object sender, RoutedEventArgs e)
+        {
+            cbxTimeValues.Items.Add(5);
+            cbxTimeValues.Items.Add(10);
+            cbxTimeValues.Items.Add(15);
+            cbxTimeValues.Items.Add(20);
+            cbxTimeValues.Items.Add(25);
+            cbxTimeValues.Items.Add(30);
+        }
+
+        private void cbxTimeValues_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CallTime = Convert.ToInt32(cbxTimeValues.SelectedItem);
+            TimeLeft = CallTime;
+            tblTimer.Text = TimeLeft.ToString();
+            timer.Start();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += timer_Tick;
+        }
+
+        private void timer_Tick(object? sender, EventArgs e)
+        {
+            if (TimeLeft > 0)
+            {
+                TimeLeft--;
+                tblTimer.Text = TimeLeft.ToString();
+            }
         }
     }
 }
