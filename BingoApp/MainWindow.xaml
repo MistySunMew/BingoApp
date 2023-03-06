@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Next Number" HorizontalAlignment="Left" Margin="49,277,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click"/>
+        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="49,277,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="342,287,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="tblCurrCall" HorizontalAlignment="Left" Margin="342,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="100" FontFamily="Arial Black" FontSize="70" TextAlignment="Center"/>
 
     </Grid>
 </Window>
