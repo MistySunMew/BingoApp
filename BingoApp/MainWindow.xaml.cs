@@ -32,6 +32,8 @@ namespace BingoApp
            
             Random rnd = new Random();
             CurrentNumber = rnd.Next(1, 76);
+            
+            tblCurrCall.Text = CurrentNumber.ToString();
 
         }
     }
