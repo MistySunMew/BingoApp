@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,19 @@ namespace BingoApp
         private int CurrentNumber = 0;
         private ArrayList CalledNumbers = new();
 
+        private void ChangeSelectedColor(object sender, RoutedEventArgs e) 
+        {
+            System.Windows.Shapes.Rectangle rectangle = (System.Windows.Shapes.Rectangle)sender;
+            if (rectangle.Fill == Brushes.White) 
+            {
+                rectangle.Fill = Brushes.Red;
+            }
+            else
+            {
+                rectangle.Fill = Brushes.White;
+            }
+            
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -49,229 +63,236 @@ namespace BingoApp
                 switch (CurrentNumber)
                 {
                     case 1:
-                        tbl1.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl1.Background = new SolidColorBrush(Colors.Red);
+                        tbl1.Foreground= new SolidColorBrush(Colors.Yellow);
                         break;
                     case 2:
-                        tbl2.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl2.Background = new SolidColorBrush(Colors.Red);
+                        tbl2.Foreground= new SolidColorBrush(Colors.Yellow);
                         break;
                     case 3:
-                        tbl3.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl3.Background = new SolidColorBrush(Colors.Red);
+                        tbl3.Foreground = new SolidColorBrush(Colors.Yellow);
                         break;
                     case 4:
-                        tbl4.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl4.Background = new SolidColorBrush(Colors.Red);
+                        tbl4.Foreground = new SolidColorBrush(Colors.Yellow);
                         break;
                     case 5:
-                        tbl5.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl5.Background = new SolidColorBrush(Colors.Red);
+                        tbl5.Foreground = new SolidColorBrush(Colors.Yellow);
                         break;
                     case 6:
-                        tbl6.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl6.Background = new SolidColorBrush(Colors.Red);
+                        tbl6.Foreground = new SolidColorBrush(Colors.Yellow);
                         break;
                     case 7:
-                        tbl7.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl7.Background = new SolidColorBrush(Colors.Red);
+                        tbl7.Foreground = new SolidColorBrush(Colors.Yellow);
                         break;
                     case 8:
-                        tbl8.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl8.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 9:
-                        tbl9.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl9.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 10:
-                        tbl10.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl10.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 11:
-                        tbl11.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl11.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 12:
-                        tbl12.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl12.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 13:
-                        tbl13.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl13.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 14:
-                        tbl14.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl14.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 15:
-                        tbl15.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl15.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 16:
-                        tbl16.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl16.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 17:
-                        tbl17.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl17.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 18:
-                        tbl18.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl18.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 19:
-                        tbl19.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl19.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 20:
-                        tbl20.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl20.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 21:
-                        tbl21.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl21.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 22:
-                        tbl22.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl22.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 23:
-                        tbl23.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl23.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 24:
-                        tbl24.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl24.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 25:
-                        tbl25.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl25.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 26:
-                        tbl26.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl26.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 27:
-                        tbl27.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl27.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 28:
-                        tbl28.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl28.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 29:
-                        tbl29.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl29.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 30:
-                        tbl30.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl30.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 31:
-                        tbl31.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl31.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 32:
-                        tbl32.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl32.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 33:
-                        tbl33.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl33.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 34:
-                        tbl34.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl34.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 35:
-                        tbl35.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl35.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 36:
-                        tbl36.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl36.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 37:
-                        tbl37.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl37.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 38:
-                        tbl38.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl38.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 39:
-                        tbl39.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl39.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 40:
-                        tbl40.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl40.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 41:
-                        tbl41.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl41.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 42:
-                        tbl42.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl42.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 43:
-                        tbl43.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl43.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 44:
-                        tbl44.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl44.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 45:
-                        tbl45.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl45.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 46:
-                        tbl46.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl46.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 47:
-                        tbl47.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl47.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 48:
-                        tbl48.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl48.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 49:
-                        tbl49.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl49.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 50:
-                        tbl50.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl50.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 51:
-                        tbl51.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl51.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 52:
-                        tbl52.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl52.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 53:
-                        tbl53.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl53.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 54:
-                        tbl54.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl54.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 55:
-                        tbl55.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl55.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 56:
-                        tbl56.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl56.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 57:
-                        tbl57.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl57.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 58:
-                        tbl58.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl58.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 59:
-                        tbl59.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl59.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 60:
-                        tbl60.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl60.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 61:
-                        tbl61.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl61.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 62:
-                        tbl62.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl62.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 63:
-                        tbl63.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl63.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 64:
-                        tbl64.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl64.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 65:
-                        tbl65.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl65.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 66:
-                        tbl66.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl66.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 67:
-                        tbl67.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl67.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 68:
-                        tbl68.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl68.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 69:
-                        tbl69.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl69.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 70:
-                        tbl70.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl70.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 71:
-                        tbl71.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl71.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 72:
-                        tbl72.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl72.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 73:
-                        tbl73.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl73.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 74:
-                        tbl74.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl74.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case 75:
-                        tbl75.Background = new SolidColorBrush(Colors.Yellow);
+                        tbl75.Background = new SolidColorBrush(Colors.Red);
                         break;
                     default:
                         break;
