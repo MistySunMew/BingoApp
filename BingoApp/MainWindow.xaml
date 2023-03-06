@@ -8,7 +8,7 @@
         Title="MainWindow" WindowStyle="None" WindowState="Maximized" Width="1920" Height="1080" Loaded="Window_Loaded">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="103" Margin="37,707,0,0" Stroke="Black" VerticalAlignment="Top" Width="124"/>
-        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="322,904,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click" Height="130" Width="320" FontSize="50"/>
+        <Button x:Name="btnNextNum" Content="Next Number" HorizontalAlignment="Left" Margin="322,601,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click" Height="130" Width="320" FontSize="50"/>
         <Rectangle HorizontalAlignment="Left" Height="400" Margin="672,590,0,0" Stroke="Black" VerticalAlignment="Top" Width="400"/>
         <TextBlock x:Name="tblCurrCall" HorizontalAlignment="Left" Margin="672,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" Width="400" FontFamily="Arial Black" FontSize="280" TextAlignment="Center"/>
         <TextBlock x:Name="tblB" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" Width="115" Height="90" FontFamily="Arial Black" FontSize="75" TextAlignment="Center"/>
@@ -126,6 +126,7 @@
         <Label Content="Time Per Call:" HorizontalAlignment="Left" Margin="38,820,0,0" VerticalAlignment="Top" FontSize="40"/>
         <TextBlock x:Name="tblTimer" HorizontalAlignment="Left" Margin="37,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="90" TextAlignment="Center"/>
         <Label Content="Timer:" HorizontalAlignment="Left" Margin="13,617,0,0" VerticalAlignment="Top" FontSize="60"/>
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="298,950,0,0" VerticalAlignment="Top" Cursor="Hand" Height="80" Width="250" FontSize="50" Click="btnNewGame_Click"/>
 
     </Grid>
 </Window>

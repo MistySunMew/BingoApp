@@ -345,5 +345,11 @@ namespace BingoApp
                 tblTimer.Text = TimeLeft.ToString();
             }
         }
+
+        private void btnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            Window win = new MainWindow();
+            win.Show();
+        }
     }
 }
