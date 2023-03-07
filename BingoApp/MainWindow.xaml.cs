@@ -435,5 +435,18 @@ namespace BingoApp
             win.Show();
             Close();
         }
+
+        private void ChangeSelectedColor(object sender, TouchEventArgs e)
+        {
+            System.Windows.Shapes.Rectangle rectangle = (System.Windows.Shapes.Rectangle)sender;
+            if (rectangle.Fill == Brushes.White)
+            {
+                rectangle.Fill = Brushes.Red;
+            }
+            else
+            {
+                rectangle.Fill = Brushes.White;
+            }
+        }
     }
 }
